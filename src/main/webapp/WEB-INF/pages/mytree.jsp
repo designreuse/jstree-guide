@@ -19,16 +19,12 @@
     <script src="${contextPath}/resources/jquery/jquery-3.2.1.min.js"></script>
     <script src="${contextPath}/resources/jquery/jquery-ui.min.js"></script>
 
-        <link href="${contextPath}/resources/fancytree/dist/skin-xp/ui.fancytree.min.css" rel="stylesheet">
-    <%--    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">--%>
+    <link href="${contextPath}/resources/fancytree/dist/skin-xp/ui.fancytree.css" rel="stylesheet">
 
-<%--    <link href="${contextPath}/resources/css/font-awesome.min.css" rel="stylesheet">--%>
+        <script src="${contextPath}/resources/fancytree/dist/jquery.fancytree-all-deps.min.js"></script>
 
-    <%--    <link rel="stylesheet" href="${contextPath}/resources/fancytree/dist/skin-awesome/ui.fancytree.min.css">--%>
-    <%--    <script src="${contextPath}/resources/fancytree/dist/jquery.fancytree-all-deps.min.js"></script>--%>
-    <link href="${contextPath}/resources/fancytree/dist/skin-awesome/ui.fancytree.css" rel="stylesheet" class="skinswitcher">
     <script src="${contextPath}/resources/fancytree/src/jquery.fancytree.js"></script>
-    <script src="${contextPath}/resources/fancytree/src/jquery.fancytree.glyph.js"></script>
+
 
     <script src="${contextPath}/resources/fancytree/lib/contextmenu-abs/jquery.contextMenu-custom.js"></script>
     <link href="${contextPath}/resources/fancytree/lib/contextmenu-abs/jquery.contextMenu.css" rel="stylesheet" >
@@ -428,7 +424,7 @@
 
     <h2 class="container">Load from Ajax data:</h2><br>
 
-    <div id="tree2" data-source="ajax" class="sampletree">
+    <div id="tree2" data-source="ajax">
     </div>
 
     <!-- Definition of context menu -->

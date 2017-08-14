@@ -41,6 +41,7 @@ public class TreeController {
                 SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername();
 
         result = nodeService.findChildren(userService.findUserByLogin(username).getUserId(), 0);
+
         return result;
     }
 
@@ -56,6 +57,11 @@ public class TreeController {
                 SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername();
 
         List<NodeResponseBody> result;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         result = nodeService.findChildren(userService.findUserByLogin(username).getUserId(), Integer.parseInt(parent));
         return result;
     }
